@@ -21,38 +21,38 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
    - [ ] Password: admin
       
 ### 2. Configure Azure AD 
-	- [ ] In your Azure home dashboard search for app registrations
-	- [ ] Create a new app registration
-	- [ ] With any suitable name and choose supported as accounts in this organisational directory only
-	- [ ] Scroll down, under Redirect URI choose web and the link has to be pasted from the keycloak. 
-	- [ ] Now copy the authorization and token endpoints (Oauth 2.0 authorization token endpoint and token endpoint) under endpoints.
-	- [ ] Copy the client ID and paste it somewhere in notepad that will be used for keycloak configuration.
-	- [ ] Create a new client secret and copy the client secret and paste it in notepad for configuring the keycloak. 
+- [ ] In your Azure home dashboard search for app registrations
+- [ ] Create a new app registration
+- [ ] With any suitable name and choose supported as accounts in this organisational directory only
+- [ ] Scroll down, under Redirect URI choose web and the link has to be pasted from the keycloak. 
+- [ ] Now copy the authorization and token endpoints (Oauth 2.0 authorization token endpoint and token endpoint) under endpoints.
+- [ ] Copy the client ID and paste it somewhere in notepad that will be used for keycloak configuration.
+- [ ] Create a new client secret and copy the client secret and paste it in notepad for configuring the keycloak. 
      
 ### 3. Configure Keycloak
-     - [ ] Login to Keycloak admin console: http://localhost:8080 → Administration Console
-	 - [ ] Create Realm :
-	        • Click Create Realm
-	        • Name: demo (must match OIDC_ISSUER in code)
-	 - [ ] Add an Identity Provider :
-	    - [ ] Choose OpenId Connect v1.0 
-	    - [ ] Enter an alias
-	    - [ ] Copy the redirect URI and use it in 4th step of (2. Configure Azure AD)
-	    - [ ] Choose login flow as First broker login
-	    - [ ] Sync mode as import
-	    - [ ] Use the authorization and token endpoints from the 5th step of(2. Configure Azure AD)
-	    - [ ] Paste the client ID and the client secret from the Azure AD.
-	    - [ ] Mention default scopes as -> openid profile email  
-	 - [ ] Create Client :
-	    - [ ] Go to: Clients → Create client
-		- [ ] Client ID: go-web-app
-		- [ ] Client type: OpenID Connect
-		- [ ] Root URL: (eg http://localhost:3000)
-	    - [ ] Save
-	 - [ ] Under Client settings:
-	    - [ ] Enable Standard Flow ✅
-		- [ ] Set Valid Redirect URIs to:eg http://localhost:3000/callback
-	    - [ ] Save
+- [ ] Login to Keycloak admin console: http://localhost:8080 → Administration Console
+- [ ] Create Realm :
+		• Click Create Realm
+	    • Name: demo (must match OIDC_ISSUER in code)
+- [ ] Add an Identity Provider :
+	- [ ] Choose OpenId Connect v1.0 
+	- [ ] Enter an alias
+	- [ ] Copy the redirect URI and use it in 4th step of (2. Configure Azure AD)
+	- [ ] Choose login flow as First broker login
+	- [ ] Sync mode as import
+	- [ ] Use the authorization and token endpoints from the 5th step of(2. Configure Azure AD)
+	- [ ] Paste the client ID and the client secret from the Azure AD.
+	- [ ] Mention default scopes as -> openid profile email  
+- [ ] Create Client :
+	- [ ] Go to: Clients → Create client
+	- [ ] Client ID: go-web-app
+	- [ ] Client type: OpenID Connect
+	- [ ] Root URL: (eg http://localhost:3000)
+	- [ ] Save
+- [ ] Under Client settings:
+	- [ ] Enable Standard Flow ✅
+	- [ ] Set Valid Redirect URIs to:eg http://localhost:3000/callback
+	- [ ] Save
      
       	✅ Now Keycloak is ready
 
