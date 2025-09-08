@@ -57,8 +57,11 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
       	✅ Now Keycloak is ready
 
 ###   4. Run Go Web App
-	     • Start the Go web app: go run main.go
-	     • App runs on (eg http://localhost:3000)
+- [ ] Start the Go web app:
+ ```bash
+ go run main.go
+ ```
+- [ ] App runs on (eg http://localhost:3000)
 
 ## 🔐 Login Flow
 	  1.	Visit http://localhost:3000 → you’ll see a Login with Keycloak button.
