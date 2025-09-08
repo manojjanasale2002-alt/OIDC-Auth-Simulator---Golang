@@ -4,8 +4,7 @@ Overview
 A lightweight simulator built with Go to demonstrate the OIDC authentication flow using Keycloak as an identity broker and external IdPs like Google or Azure AD.
 
 ## ⚙️ Prerequisites <br>
-- [ ] Create an app in your IdP. Use the following URIs if you want to run this tool locally.
-	• Go 1.21+ installed 
+- [ ] Go 1.21+ installed 
 	• Docker installed (for Keycloak) 
 	• Docker Compose installed 
 	• Browser to test login 
