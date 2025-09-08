@@ -76,9 +76,6 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
 	   - [ ]	Full ID token
 	   - [ ]	Decoded claims (JSON map)
 
-## 🛠️ Configuration
-	   The Go app reads config from environment variables (with defaults):
-
 ## 📖 How It Works (Quick Primer)
 - [ ]	User clicks login → app generates:
 	    	•	state (CSRF protection)
