@@ -11,7 +11,7 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
 
 ## 🚀 Setup & Run <br>
   ### 1. Start Keycloak (Docker)
-	     • Spin up Keycloak using Docker Compose: docker compose up -d
+- [ ] Spin up Keycloak using Docker Compose: docker compose up -d
 	     • Runs Keycloak on http://localhost:8080
 	     • Default credentials for Keycloak :
 	  	    •	Username: admin
