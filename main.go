@@ -35,10 +35,10 @@ func base64URLEncode(b []byte) string { return strings.TrimRight(base64.URLEncod
 
 func main() {
     // Config via env
-    issuer := getenv("OIDC_ISSUER", "http://localhost:8080/realms/demo-realm")
-    clientID := getenv("OIDC_CLIENT_ID", "go-web-app")
+    issuer := getenv("OIDC_ISSUER", "http://localhost:8080/realms/demo-realm") //enter your realm name instead of <demo realm>
+    clientID := getenv("OIDC_CLIENT_ID", "go-web-app") //Enter your clientID
     clientSecret := os.Getenv("OIDC_CLIENT_SECRET") // empty for public client
-    redirectURL := getenv("OIDC_REDIRECT_URL", "http://localhost:3000/callback")
+    redirectURL := getenv("OIDC_REDIRECT_URL", "http://localhost:3000/callback") 
     addr := getenv("ADDR", ":3000")
 
     ctx := context.Background()
