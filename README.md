@@ -64,31 +64,31 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
 - [ ] App runs on (eg http://localhost:3000)
 
 ## 🔐 Login Flow
-	  1.	Visit http://localhost:3000 → you’ll see a Login with Keycloak button.
-	  2.	Click → you’ll be redirected to Keycloak login.
-	  3.	Enter the Keycloak user credentials (e.g., demo-user).
-	  4.	Keycloak redirects back to /callback on your Go app.
-	  5.	The app:
-	    	•	Exchanges the authorization code for tokens (Access, ID, Refresh).
-	    	•	Verifies the ID token signature.
-	    	•	Displays:
-	    	•	Access token (truncated)
-	    	•	Full ID token
-	    	•	Decoded claims (JSON map)
+- [ ]	Visit http://localhost:3000 → you’ll see a Login with Keycloak button.
+- [ ]	Click → you’ll be redirected to Keycloak login.
+- [ ]	Enter the Keycloak user credentials (e.g., demo-user).
+- [ ]	Keycloak redirects back to /callback on your Go app.
+- [ ]	The app:
+	- [ ]	Exchanges the authorization code for tokens (Access, ID, Refresh).
+	- [ ]	Verifies the ID token signature.
+	- [ ]	Displays:
+	- [ ]	Access token (truncated)
+	   - [ ]	Full ID token
+	   - [ ]	Decoded claims (JSON map)
 
 ## 🛠️ Configuration
 	   The Go app reads config from environment variables (with defaults):
 
 ## 📖 How It Works (Quick Primer)
-		1.	User clicks login → app generates:
+- [ ]	User clicks login → app generates:
 	    	•	state (CSRF protection)
 	    	•	code_challenge (PKCE)
-		2.	Redirects user to Keycloak authorization endpoint.
-		3.	After login, Keycloak redirects back with an authorization code.
-		4.	The Go app:
-	    	•	Exchanges code + code_verifier for tokens.
-	    	•	Verifies ID token signature (issuer, audience).
-	    	•	Extracts and shows user claims.
+- [ ]	Redirects user to Keycloak authorization endpoint.
+- [ ]	After login, Keycloak redirects back with an authorization code.
+- [ ]	The Go app:
+    - [ ]	Exchanges code + code_verifier for tokens.
+	- [ ]	Verifies ID token signature (issuer, audience).
+	- [ ]	Extracts and shows user claims.
 
   		This is the OIDC Authorization Code Flow with PKCE.
 
