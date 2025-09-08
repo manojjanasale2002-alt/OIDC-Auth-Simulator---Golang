@@ -93,6 +93,8 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
   		This is the OIDC Authorization Code Flow with PKCE.
 
 ## 🧹 Cleanup
-  	To stop Keycloak: docker compose down
-
+- [ ] To stop Keycloak:
+```bash
+      docker compose down
+```
 ✅ With these steps, one should be able to pull the repo, run Keycloak + Go app, and test OIDC login end-to-end.
