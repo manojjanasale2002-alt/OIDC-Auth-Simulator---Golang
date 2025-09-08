@@ -30,29 +30,29 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
 	- [ ] Create a new client secret and copy the client secret and paste it in notepad for configuring the keycloak. 
      
   ### 3. Configure Keycloak
-	     • Login to Keycloak admin console: http://localhost:8080 → Administration Console
-	     • Create Realm :
+     - [ ] Login to Keycloak admin console: http://localhost:8080 → Administration Console
+	 - [ ] Create Realm :
 	        • Click Create Realm
 	        • Name: demo (must match OIDC_ISSUER in code)
-	     • Add an Identity Provider :
-	        • Choose OpenId Connect v1.0 
-	        • Enter an alias
-	        • Copy the redirect URI and use it in 4th step of (2. Configure Azure AD)
-	        • Choose login flow as First broker login
-	        • Sync mode as import
-	        • Use the authorization and token endpoints from the 5th step of(2. Configure Azure AD)
-	        • Paste the client ID and the client secret from the Azure AD.
-	        • Mention default scopes as -> openid profile email  
-	     • Create Client :
-	        •	Go to: Clients → Create client
-		      •	Client ID: go-web-app
-		      •	Client type: OpenID Connect
-		      •	Root URL: (eg http://localhost:3000)
-	        •	Save
-	     • Under Client settings:
-		      •	Enable Standard Flow ✅
-		      •	Set Valid Redirect URIs to:eg http://localhost:3000/callback
-	        •	Save
+	 - [ ] Add an Identity Provider :
+	    - [ ] Choose OpenId Connect v1.0 
+	    - [ ] Enter an alias
+	    - [ ] Copy the redirect URI and use it in 4th step of (2. Configure Azure AD)
+	    - [ ] Choose login flow as First broker login
+	    - [ ] Sync mode as import
+	    - [ ] Use the authorization and token endpoints from the 5th step of(2. Configure Azure AD)
+	    - [ ] Paste the client ID and the client secret from the Azure AD.
+	    - [ ] Mention default scopes as -> openid profile email  
+	 - [ ] Create Client :
+	    - [ ] Go to: Clients → Create client
+		- [ ] Client ID: go-web-app
+		- [ ] Client type: OpenID Connect
+		- [ ] Root URL: (eg http://localhost:3000)
+	    - [ ] Save
+	 - [ ] Under Client settings:
+	    - [ ] Enable Standard Flow ✅
+		- [ ] Set Valid Redirect URIs to:eg http://localhost:3000/callback
+	    - [ ] Save
      
       	✅ Now Keycloak is ready
 
