@@ -21,13 +21,13 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
    - [ ] Password: admin
       
   ### 2. Configure Azure AD 
-	     • In your Azure home dashboard search for app registrations
-	     • Create a new app registration
-	     • With any suitable name and choose supported as accounts in this organisational directory only
-	     • Scroll down, under Redirect URI choose web and the link has to be pasted from the keycloak. 
-	     • Now copy the authorization and token endpoints (Oauth 2.0 authorization token endpoint and token endpoint) under endpoints.
-	     • Copy the client ID and paste it somewhere in notepad that will be used for keycloak configuration.
-	     • Create a new client secret and copy the client secret and paste it in notepad for configuring the keycloak. 
+- [ ] In your Azure home dashboard search for app registrations
+- [ ] Create a new app registration
+- [ ] With any suitable name and choose supported as accounts in this organisational directory only
+- [ ] Scroll down, under Redirect URI choose web and the link has to be pasted from the keycloak. 
+- [ ] Now copy the authorization and token endpoints (Oauth 2.0 authorization token endpoint and token endpoint) under endpoints.
+- [ ] Copy the client ID and paste it somewhere in notepad that will be used for keycloak configuration.
+- [ ] Create a new client secret and copy the client secret and paste it in notepad for configuring the keycloak. 
      
   ### 3. Configure Keycloak
 	     • Login to Keycloak admin console: http://localhost:8080 → Administration Console
