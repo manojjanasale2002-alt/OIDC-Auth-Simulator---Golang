@@ -20,7 +20,7 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
    - [ ] Username: admin
    - [ ] Password: admin
       
-  ### 2. Configure Azure AD 
+### 2. Configure Azure AD 
 	- [ ] In your Azure home dashboard search for app registrations
 	- [ ] Create a new app registration
 	- [ ] With any suitable name and choose supported as accounts in this organisational directory only
@@ -29,7 +29,7 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
 	- [ ] Copy the client ID and paste it somewhere in notepad that will be used for keycloak configuration.
 	- [ ] Create a new client secret and copy the client secret and paste it in notepad for configuring the keycloak. 
      
-  ### 3. Configure Keycloak
+### 3. Configure Keycloak
      - [ ] Login to Keycloak admin console: http://localhost:8080 → Administration Console
 	 - [ ] Create Realm :
 	        • Click Create Realm
