@@ -1,4 +1,4 @@
-🔑 OIDC Auth Simulator - Golang
+# 🔑 OIDC Auth Simulator - Golang
 
 Overview
 A lightweight simulator built with Go to demonstrate the OIDC authentication flow using Keycloak as an identity broker and external IdPs like Google or Azure AD.
