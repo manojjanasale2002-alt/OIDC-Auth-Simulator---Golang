@@ -5,11 +5,9 @@ A lightweight simulator built with Go to demonstrate the OIDC authentication flo
 
 ## ⚙️ Prerequisites <br>
 	• Go 1.21+ installed 
- 
 	• Docker installed (for Keycloak) 
- 
-	• Docker Compose installed <br>
-	• Browser to test login <br>
+	• Docker Compose installed 
+	• Browser to test login 
 
 ## 🚀 Setup & Run <br>
   ### 1. Start Keycloak (Docker)
